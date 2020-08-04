@@ -1,0 +1,247 @@
+/* Navbar */
+.navbar {
+  position: relative;
+  z-index: 1;
+}
+
+.navbar-brand {
+  font-family: 'Viga', sans-serif;
+  font-size: 32px;
+}
+
+/* Utility */
+.btns {
+  text-transform: uppercase;
+  border-radius: 40px;
+}
+
+/* Jumbotron */
+.jumbotron {
+  background-image: url('../img/jumbotron-bg.jpg');
+  background-size: cover;
+  height: 540px;
+  text-align: center;
+  position: relative;
+}
+
+.jumbotron .container {
+  position: relative;
+  z-index: 1;
+}
+
+.jumbotron::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  position: absolute;
+  bottom: 0;
+}
+
+.jumbotron .display-4 {
+  color: #FFFFFF;
+  margin-top: 150px;
+  margin-bottom: 30px;
+  font-size: 37px;
+  font-weight: 200;
+  text-shadow: 1px, 1px, rgba(0, 0, 0, 0.7);
+}
+
+.jumbotron .display-4 span {
+  font-weight: 500;
+}
+
+/* Info Panel */
+.info-panel {
+  background-color: #FFFFFF;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  margin-top: -100px;
+  padding: 30px;
+}
+
+.info-panel img {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+
+.info-panel h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.info-panel p {
+  font-size: 14px;
+  font-weight: 200;
+  color: #ACACAC;
+}
+
+/* Working space */
+.working-space {
+  margin-top: 120px;
+  text-align: center;
+}
+
+.working-space h3 {
+  margin-top: 30px;
+  font-size: 52px;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.working-space h3 span {
+  font-weight: 500;
+}
+
+.working-space p {
+  font-size: 18px;
+  color: #ACACAC;
+  font-weight: 200;
+  margin: 25px 0;
+}
+
+.testimonial h5 {
+  text-align: center;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 24px;
+}
+
+
+
+
+/* carousel Testimoni */
+.shadow-effect {
+  /* padding: 15px; */
+  border-radius: 4px;
+  text-align: center;
+}
+
+ /* Quotes */
+.shadow-effect .quotes {
+  margin: 20px;
+}
+
+#testimonials-list .shadow-effect p {
+  font-family: inherit;
+  color: #ACACAC;
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 0 0 17px 0;
+  font-weight: 300;
+}
+#testimonials-list .item {
+  text-align: center;
+  /* padding: 50px; */
+  margin-bottom:80px;
+  opacity: .2;
+  -webkit-transform: scale3d(0.8, 0.8, 1);
+  transform: scale3d(0.8, 0.8, 1);
+  transition: all 0.3s ease-in-out;
+}
+#testimonials-list .owl-item.active.center .item {
+  opacity: 1;
+  -webkit-transform: scale3d(1.0, 1.0, 1);
+  transform: scale3d(1.0, 1.0, 1);
+}
+.owl-carousel .owl-item img {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  max-width: 90px;
+  border-radius: 50%;
+  margin: 0 auto 17px;
+}
+
+/* OWL Carousel hide-name */
+.owl-item.active h5,
+.owl-item.active p {
+  display: none;
+}
+
+.owl-item.active.center h5,
+.owl-item.active.center p {
+  display: block;
+  color: #1C2C5D;
+}
+
+/* Change position quotes image */
+.owl-item.active img {
+  margin-top: 152px;
+}
+.owl-item.active.center img {
+  margin-top: 0;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+}
+
+.footer span {
+  display: block;
+  color: #FFFFFF;
+  background-color: #007bff;
+  font-style: 18px;
+  padding: 15px;
+  width: 100%;
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .navbar-brand, .nav-link {
+    color: #FFFFFF !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  }
+
+  .nav-link {
+    text-transform: uppercase;
+    margin-right: 30px;
+  }
+
+  .nav-link:nth-last-child(1) {
+    margin-right: 0;
+  }
+
+  .nav-link:hover::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid #0B63DC;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+
+  .jumbotron {
+    margin-top: -74px;
+    height: 640px;
+  }
+
+  .jumbotron .display-4 {
+    font-size: 62px;
+  }
+
+  .working-space {
+    text-align: left;
+  }
+
+  .testimonial {
+    margin-top: 80px;
+  }
+
+  .testimonial h5 {
+    font-size: 32px;
+  }
+
+  /* Quotes */
+  .shadow-effect .quotes {
+    margin-left: -55px;
+    margin-right: -55px;
+    margin-bottom: 20px;;
+  }
+}
