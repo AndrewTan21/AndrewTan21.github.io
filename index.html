@@ -83,7 +83,7 @@
           <img src="./assets/img/workingspace.png" class="img-fluid" />
         </div>
         <div class="col-lg-5">
-          <h3>You <span>work</span> like at <span>home</span></h3>
+          <h3>You <span>work</span> like at <span id="typing"></span></h3>
           <p>Bekerja dengan suasana hati yang lebih asik mempelajari hal baru setiap harinya.</p>
           <a href="" class="btn btn-primary btns">Gallery</a>
         </div>
@@ -147,6 +147,21 @@
     <!-- OWL Carousel -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js'></script>
-    <script  src="/assets/js/function.js"></script>
+    <script src="assets/js/function.js"></script>
+
+    <!-- Type JS -->
+    <script src="assets/js/typed.js"></script>
+    <!-- Setting Type JS -->
+    <script>
+          var typing = new Typed('#typing', {
+          strings: ['<strong>Heaven</strong>', '<i>Former Home</i>', '<i>Home</i>'],
+          typeSpeed: 150,
+          backSpeed: 0,
+          cursorChar: '_',
+          shuffle: true,
+          smartBackspace: false,
+          loop: true
+        });
+    </script>
   </body>
 </html>
