@@ -156,9 +156,11 @@
           var typing = new Typed('#typing', {
           strings: ['<strong>Heaven</strong>', '<i>Former Home</i>', '<i>Home</i>'],
           typeSpeed: 150,
-          backSpeed: 150,
+          backSpeed: 100,
           cursorChar: '_',
-          shuffle: true,
+          // startDelay: 500,
+          backDelay: 2000,
+          // shuffle: true,
           smartBackspace: false,
           loop: true
         });
