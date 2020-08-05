@@ -104,6 +104,15 @@
   margin: 25px 0;
 }
 
+
+/* Type JS Cursor Color */
+.typed-cursor {
+  color: #007bff;
+}
+
+
+
+/* Testimonial */
 .testimonial h5 {
   text-align: center;
   font-weight: 200;
